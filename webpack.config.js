@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 var babelLoader = {
     loader: 'babel-loader',
@@ -32,5 +33,8 @@ module.exports = {
         // Add `.ts` and `.tsx` as a resolvable extension.
         extensions: ['.ts', '.tsx', '.js']
       },
+    plugins: [new HtmlWebpackPlugin({
+        template: './src/index.html'
+      })],
 }
 
