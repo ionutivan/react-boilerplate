@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack --watch --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -11,7 +12,8 @@
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "@types/react": "^16.8.25",

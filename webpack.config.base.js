@@ -9,7 +9,7 @@ var babelLoader = {
   };
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.tsx',
     output: {
         path: path.join(__dirname, 'build'),
