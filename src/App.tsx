@@ -7,7 +7,10 @@ interface State {
 
 interface Props {}
 
+const Warning = React.lazy(() => import('./Warning/Warning'))
+
 class App extends React.Component<Props, State> {
+
   readonly state: State = {
     count: 0
   }
@@ -30,6 +33,11 @@ class App extends React.Component<Props, State> {
         </h2>
         <button onClick={this.increment}>+</button>
         <button onClick={this.decrement}>-</button>
+        {count > 10 ?
+          <React.Suspense fallback={null}>
+              <Warning />
+          </React.Suspense>
+          : null}
       </div>
     )
   }
