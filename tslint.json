@@ -1,0 +1,6 @@
+{
+    "extends": ["tslint:latest", "tslint-react", "tslint-react-a11y"],
+    "rules": {
+      "react-a11y-lang": false
+    }
+  }
