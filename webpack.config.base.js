@@ -3,14 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 var babelLoader = {
     loader: 'babel-loader',
-    options: {
-        presets: ['@babel/preset-env','@babel/preset-react'],
-        plugins: [
-          '@babel/plugin-proposal-class-properties',
-          'react-hot-loader/babel',
-          '@babel/plugin-syntax-dynamic-import'
-      ]
-    }
   };
 
 module.exports = {
