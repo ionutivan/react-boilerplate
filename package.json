@@ -5,7 +5,7 @@
     "dev:hot": "yarn dev -- --hot",
     "test": "jest",
     "format": "pretty-quick",
-    "lint": "tslint --project"
+    "lint": "tslint --project ./tsconfig.json"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
